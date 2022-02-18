@@ -15,3 +15,6 @@
 - Morgan
 - Mongodb
 - MVC Design Pattern
+- Prettier
+- Lint-staged
+- Husky
