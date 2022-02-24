@@ -13,7 +13,7 @@
 - Nodemon
 - Express-Ejs-Layouts
 - Morgan
-- Mongodb
+- Mongoose
 - MVC Design Pattern
 - Prettier
 - Lint-staged
