@@ -22,9 +22,9 @@ app.use(express.urlencoded({
 app.use(express.json())
 
 // Path layout master
-app.set("layout",  path.join(__dirname, "./resources/views/index"))
+app.set("layout",  path.join(__dirname, "resources", "views", "index"))
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "./resources/views/pages"))
+app.set("views", path.join(__dirname, "resources", "views", "pages"))
 
 // Connect db
 db.connect();
@@ -39,5 +39,5 @@ route(app);
 
 // Console open port
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`App listening at http://localhost:${port}`)
 })

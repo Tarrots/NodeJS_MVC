@@ -2,18 +2,10 @@ const Education = require('../models/Education')
 
 class SiteController{
     // [GET] /
-    home(req, res) {
-        
-        Education.find({}, (err, educations) => {
-            if(!err)
-            {
-                res.json(educations)
-            }
-            else 
-            {
-                res.status(400).json({error: "ERROR"})
-            }
-        })
+    home(req, res, next) {
+        Education.find({})
+            .then(educations => res.render("home",{ educations }))
+            .catch(next)
 
         //res.render("home")
     }
