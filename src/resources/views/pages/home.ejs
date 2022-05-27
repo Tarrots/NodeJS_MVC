@@ -1,0 +1,28 @@
+<div class="container">
+  <table class="table table-striped table-hover mt-3">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Mail</th>
+        <th scope="col">Address</th>
+      </tr>
+    </thead>
+  <tbody>
+  <!-- Fetch data -->
+  <% var index = 0
+    courses.forEach((courses) => { %>
+      <tr>
+        <th scope="row"><%= ++index %> </th>
+        <td><%= courses.name %></td>
+        <td><p><%= courses.phone %></p></td>
+        <td><%= courses.mail %></td>
+        <td><%= courses.address %></td>
+      </tr>
+  <% }); %>
+  
+  </tbody>
+  </table>
+  
+</div>
